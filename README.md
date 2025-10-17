@@ -2,7 +2,8 @@
 Activitat que gestiona l'accés a les dades d'una base de dades sql i la mostra per pantalla mitjançant h2-console o localhost amb .json.
 
 
-1. Per fer l'endpoint GET creem la funció a CustomerRepository i després es cridarà per CustomerController:
+**1. Per fer l'endpoint GET creem la funció a CustomerRepository i després es cridarà per CustomerController:**
+
 CustomerRepository:
 
 ![image alt](https://github.com/NuriaSQ/M06/blob/e743b5e94baf6426c8715936abaab02260f9eb8f/cap1_funcioFindAll.jpg)
@@ -11,7 +12,7 @@ CustomerController:
 
 ![image alt](https://github.com/NuriaSQ/M06/blob/f26d2f95c91947566035c9a7d9096fb750038347/cap5_endpointget.jpg)
 
-El resultat, un cop executem l'aplicació, serà poder veure les dades de la base de dades que hem creat amb format JSON o també visualitzar-lo amb H2 console
+**El resultat, un cop executem l'aplicació, serà poder veure les dades de la base de dades que hem creat amb format JSON o també visualitzar-lo amb H2 console**
 
 Base de dades, arxiu dades.sql per crear la taula:
 
@@ -25,7 +26,7 @@ Dades utilitzant H2 console:
 
 ![image alt](https://github.com/NuriaSQ/M06/blob/f26d2f95c91947566035c9a7d9096fb750038347/cap7_exempleh2console.jpg)
 
-2. Per fer l'endpoint POST creem la funció a CustomerRepository i després cridem la funció mitjançant la comanda CURL per terminal:
+**2. Per fer l'endpoint POST creem la funció a CustomerRepository i després cridem la funció mitjançant la comanda CURL per terminal:**
 
 CustomerRepository:
 
@@ -35,10 +36,10 @@ CustomerController:
 
 ![image alt](https://github.com/NuriaSQ/M06/blob/f26d2f95c91947566035c9a7d9096fb750038347/cap6_endpointpost.jpg)
 
-Quan utilitzem curl -X POST http://localhost:8080/jdbctemplate/addUsers, si tot va bé, ens surtirà el missatge d'èxit i ho podrem visualitzar un altre cop però amb els canvis
+Quan utilitzem curl -X POST http://localhost:8080/jdbctemplate/addUsers, si tot va bé, ens sortirà el missatge d'èxit i ho podrem visualitzar un altre cop però amb els canvis
 aplicats i els nous customers afegits.
 
-Resultat curl per terminal:
+Resultat CURL per terminal:
 
 ![image alt](https://github.com/NuriaSQ/M06/blob/f26d2f95c91947566035c9a7d9096fb750038347/cap8_exempleCurlX.jpg)
 
